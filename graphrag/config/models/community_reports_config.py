@@ -15,6 +15,9 @@ from .llm_config import LLMConfig
 class CommunityReportsConfig(LLMConfig):
     """Configuration section for community reports."""
 
+    enabled: bool = Field(
+        description="Whether community report extraction is enabled.",
+    )
     prompt: str | None = Field(
         description="The community report extraction prompt to use.", default=None
     )

@@ -461,6 +461,7 @@ def create_graphrag_config(
             reader.use(community_report_config),
         ):
             community_reports_model = CommunityReportsConfig(
+                enabled=reader.bool(Fragment.enabled) or defs.COMMUNITY_REPORT_EXTRACTION_ENABLED,
                 llm=hydrate_llm_params(community_report_config, llm_model),
                 parallelization=hydrate_parallelization_params(
                     community_report_config, llm_parallelization_model

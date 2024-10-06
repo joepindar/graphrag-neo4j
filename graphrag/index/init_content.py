@@ -115,6 +115,7 @@ community_reports:
   ## llm: override the global llm settings for this task
   ## parallelization: override the global parallelization settings for this task
   ## async_mode: override the global async_mode settings for this task
+  # enabled: false
   prompt: "prompts/community_report.txt"
   max_length: {defs.COMMUNITY_REPORT_MAX_LENGTH}
   max_input_length: {defs.COMMUNITY_REPORT_MAX_INPUT_LENGTH}

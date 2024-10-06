@@ -153,6 +153,7 @@ These settings control the data input used by the pipeline. Any settings with a 
 | `GRAPHRAG_CLAIM_EXTRACTION_PROMPT_FILE`       | The claim extraction prompt to utilize.                                                    | `string` | optional             | `None`                                                           |
 | `GRAPHRAG_CLAIM_EXTRACTION_MAX_GLEANINGS`     | The maximum number of redrives (gleanings) to invoke when extracting claims in a loop.     | `int`    | optional             | 1                                                                |
 | `GRAPHRAG_CLAIM_EXTRACTION_ENCODING_MODEL`		| The encoding model to use for claim extraction.                                            | `str`    | optional             | The top-level encoding model                                     |
+| `GRAPHRAG_COMMUNITY_REPORTS_ENABLED`           | Whether community reports extraction is enabled for this pipeline.                        | `bool`   | optional             | `True`                                                           |
 | `GRAPHRAG_COMMUNITY_REPORTS_PROMPT_FILE`      | The community reports extraction prompt to utilize.                                        | `string` | optional             | `None`                                                           |
 | `GRAPHRAG_COMMUNITY_REPORTS_MAX_LENGTH`       | The maximum number of tokens to generate per community reports.                            | `int`    | optional             | 1500                                                             |
 

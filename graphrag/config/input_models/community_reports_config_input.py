@@ -11,6 +11,7 @@ from .llm_config_input import LLMConfigInput
 class CommunityReportsConfigInput(LLMConfigInput):
     """Configuration section for community reports."""
 
+    enabled: NotRequired[bool | None]
     prompt: NotRequired[str | None]
     max_length: NotRequired[int | str | None]
     max_input_length: NotRequired[int | str | None]

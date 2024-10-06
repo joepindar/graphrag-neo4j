@@ -177,6 +177,7 @@ This is the base LLM configuration section. Other steps may override this config
 
 ### Fields
 
+- `enabled` **bool** - Whether to enable community reports. default=True
 - `llm` (see LLM top-level config)
 - `parallelization` (see Parallelization top-level config)
 - `async_mode` (see Async Mode top-level config)

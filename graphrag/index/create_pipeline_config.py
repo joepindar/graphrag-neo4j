@@ -127,7 +127,7 @@ def create_pipeline_config(settings: GraphRagConfig, verbose=False) -> PipelineC
             *_document_workflows(settings, embedded_fields),
             *_text_unit_workflows(settings, covariates_enabled, embedded_fields),
             *_graph_workflows(settings, embedded_fields),
-            *_community_workflows(settings, covariates_enabled, embedded_fields),
+            *(_community_workflows(settings, covariates_enabled, embedded_fields) if settings.community_reports.enabled else []),
             *(_covariate_workflows(settings) if covariates_enabled else []),
         ],
     )

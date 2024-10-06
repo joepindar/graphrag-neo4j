@@ -102,7 +102,9 @@ class GraphRagConfig(LLMConfig):
 
     community_reports: CommunityReportsConfig = Field(
         description="The community reports configuration to use.",
-        default=CommunityReportsConfig(),
+        default=CommunityReportsConfig(
+            enabled=defs.COMMUNITY_REPORT_EXTRACTION_ENABLED,
+        ),
     )
     """The community reports configuration to use."""
 
